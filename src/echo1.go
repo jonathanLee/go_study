@@ -15,6 +15,7 @@ func main() {
 	s, sep := "", ""
 	//string 변수 s, sep 선언
 	for i := 1; i < len(os.Args); i++ {
+		fmt.Println(i)
 		s += sep + os.Args[i]
 		sep = " "
 	}
